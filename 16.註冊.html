@@ -1,0 +1,29 @@
+<html>
+    <head><title>註冊</title></head>
+    <body>
+        <form method="GET" action="regist.php">       <!--建議用POST-->
+            姓名:<input type="text" name="id"><br>     <!--<br> 換行標籤 (tag)。<br> 標籤代表的是換一行。-->
+            密碼:<input type="password" name="pwd"><br>
+            性別:<input type="radio" name="sex" value="m">男
+            <input type="radio" name="sex" value="f" checked>女    <!--radio(單選) checked(預選)-->
+            <input type="radio" name="sex" value="s">多元<br>
+            興趣:<input type=checkbox name=interest value=youtube>看Youtube
+            <input type=checkbox name=interest value=travel checked>旅遊
+            <input type=checkbox name=interest value=music>聽音樂
+            <input type=checkbox name=interest value=shopping checked>逛街<br>   <!--checkbox(複選)  checked(預選)-->
+            居住地:<select name=county>
+                <option value="taoyan">桃園</option>
+                <option value="hsinchu" selected>新竹縣/市</option>   <!--select(下拉式選單)  selected(預選)-->
+                <option value="miaoli">苗栗</option>                  <!--<option> 是用來建立選項，而選項內容放在 <option></option> 標籤裡面。-->
+                <option value="others">其他</option>
+            </select><br>
+            自傳:<br><textarea name=autobiography rows=10 cols=40>   <!--<textarea> 可以用來在表單 (form) 中，建立一個可以輸入多行文字的輸入框 (multi-line textbox)。-->
+                請填入自傳...
+            </textarea>
+            <p></p>      <!--<p> 換行標籤 (tag)。<p> 標籤代表的是換兩行。-->
+            <input type="submit" value="註冊">   <!--input(輸入) type-->
+            <input type="reset" value="清除">
+
+        </form>
+    </body>
+</html>
